@@ -14,3 +14,4 @@ equipment_availability_index [equipment_table] 2023-08-15T14:11:27Z sqitch <sqit
 equipment_rental_table [deriv_schema diver_table equipment_table] 2023-08-15T14:12:29Z sqitch <sqitch@639ad54f445b> # Adding equipment rental table
 dive_buddy_table [deriv_schema diver_table dive_table] 2023-08-15T14:13:17Z sqitch <sqitch@4426bd39baeb> # Adding dive buddy table
 register_diver_proc [deriv_schema diver_table] 2023-08-15T14:48:29Z sqitch <sqitch@40eb45fcabc8> # Adding register diver proc
+@v1.0.2 2023-08-15T15:01:11Z sqitch <sqitch@e6702b8ee261> # Tag v1.0.2
