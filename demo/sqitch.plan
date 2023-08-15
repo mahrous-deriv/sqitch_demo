@@ -2,3 +2,4 @@
 %project=demo
 %uri=https://github.com/mahrous-deriv/sqitch_demo/tree/master/demo
 
+deriv_schema 2023-08-15T08:23:15Z sqitch <sqitch@294cf836ae7c> # Adding deriv schema
