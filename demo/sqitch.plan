@@ -3,3 +3,13 @@
 %uri=https://github.com/mahrous-deriv/sqitch_demo/tree/master/demo
 
 deriv_schema 2023-08-15T08:23:15Z sqitch <sqitch@294cf836ae7c> # Adding deriv schema
+qualification_table [deriv_schema] 2023-08-15T14:05:22Z sqitch <sqitch@6698ea378213> # Adding qualification table
+diver_table [deriv_schema qualification_table] 2023-08-15T14:05:59Z sqitch <sqitch@b2f60814580f> # Adding diver table
+dive_table [deriv_schema qualification_table diver_table] 2023-08-15T14:06:31Z sqitch <sqitch@b7c70a98787a> # Adding dive table
+dive_location_index [dive_table] 2023-08-15T14:08:06Z sqitch <sqitch@94fe20dac1ae> # Adding dive location index
+participant_table [deriv_schema dive_table diver_table] 2023-08-15T14:09:05Z sqitch <sqitch@81904ab86173> # Adding participant table
+availability_enum [deriv_schema] 2023-08-15T14:38:38Z sqitch <sqitch@bd74ca75d8b9> # Adding equipment availability enum
+equipment_table [deriv_schema diver_table] 2023-08-15T14:10:07Z sqitch <sqitch@b1e355fba13e> # Adding equipment table
+equipment_availability_index [equipment_table] 2023-08-15T14:11:27Z sqitch <sqitch@1693aa4ab1a5> # Adding equipment availability index
+equipment_rental_table [deriv_schema diver_table equipment_table] 2023-08-15T14:12:29Z sqitch <sqitch@639ad54f445b> # Adding equipment rental table
+dive_buddy_table [deriv_schema diver_table dive_table] 2023-08-15T14:13:17Z sqitch <sqitch@4426bd39baeb> # Adding dive buddy table
