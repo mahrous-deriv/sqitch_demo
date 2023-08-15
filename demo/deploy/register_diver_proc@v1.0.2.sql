@@ -12,6 +12,9 @@ CREATE OR REPLACE FUNCTION deriv.register_diver(
     qualification_level VARCHAR(50))
 RETURNS TABLE (new_diver_id INTEGER) AS $$
 BEGIN
+  IF date_of_birth > NOW() - INTERVAL '18 years' THEN
+    RAISE EXCEPTION 'Diver must be an adult';
+  END IF;
   INSERT INTO deriv.diver (first_name, last_name, email, date_of_birth, qualification_level, registration_date) 
   VALUES (first_name, last_name, email, date_of_birth, qualification_level, NOW()) 
   RETURNING id INTO new_diver_id;
