@@ -3,6 +3,9 @@
 %uri=https://github.com/mahrous-deriv/sqitch_demo/tree/master/demo
 
 deriv_schema 2023-08-15T08:23:15Z sqitch <sqitch@294cf836ae7c> # Adding deriv schema
+person_table [deriv_schema] 2023-08-15T09:55:45Z sqitch <sqitch@c817e462a6c8> # Adding person_table
+university_table [deriv_schema person_table] 2023-08-15T12:37:13Z sqitch <sqitch@0f90f7f0a96f> # Adding university table
+@v1.0.1 2023-08-15T12:55:40Z sqitch <sqitch@3f9d044c23bc> # Tag v1.0.1
 qualification_table [deriv_schema] 2023-08-15T14:05:22Z sqitch <sqitch@6698ea378213> # Adding qualification table
 diver_table [deriv_schema qualification_table] 2023-08-15T14:05:59Z sqitch <sqitch@b2f60814580f> # Adding diver table
 dive_table [deriv_schema qualification_table diver_table] 2023-08-15T14:06:31Z sqitch <sqitch@b7c70a98787a> # Adding dive table
